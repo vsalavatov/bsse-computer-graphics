@@ -20,9 +20,9 @@ out vec4 color;
 
 void main()
 {
-	gl_Position = projection * view * transform_xz * transform_xy * vec4(grid_xy[0], f_val, grid_xy[1], 1.0);
+    gl_Position = projection * view * transform_xz * transform_xy * vec4(grid_xy[0], f_val, grid_xy[1], 1.0);
     float coef = (f_val - min_value) / (max_value - min_value);
-	color = high_color * coef + low_color * (1 - coef);
+    color = high_color * coef + low_color * (1 - coef);
 }
 )";
 
@@ -35,7 +35,7 @@ layout (location = 0) out vec4 out_color;
 
 void main()
 {
-	out_color = color;
+    out_color = color;
 }
 )";
 

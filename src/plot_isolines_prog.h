@@ -16,8 +16,8 @@ out vec4 color;
 
 void main()
 {
-	gl_Position = projection * view * transform_xz * transform_xy * vec4(position[0], position[2], position[1], 1.0);
-	color = in_color;
+    gl_Position = projection * view * transform_xz * transform_xy * vec4(position[0], position[2], position[1], 1.0);
+    color = in_color;
 }
 )";
 
@@ -30,7 +30,7 @@ layout (location = 0) out vec4 out_color;
 
 void main()
 {
-	out_color = color;
+    out_color = color;
 }
 )";
 
